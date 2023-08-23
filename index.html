@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <style>
-  .glyphicon {
-    font-size: 30px;
+  html {
+    position: relative;
+    min-height: 100%;
   }
-  .well {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -100px; /* negative number 1/2 height */
-        margin-left: -100px; /* negative number 1/2 width */
-        outline: 1px solid #CCC;
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .centered-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 </style>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8">
-    <title>Bitscheme, LLC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-        <div class="well">
-            <a class="btn btn-info btn-lg" href="mailto:info@bitscheme.com">
-                <i class="glyphicon glyphicon-envelope"></i>
-                &nbsp;Contact Us
-            </a>
-        </div>
-    </div>
-</body>
-<footer>
-  <div class="container">
-    Bitscheme LLC
-    3030 Northwest Expressway<br/>
-    STE 200B<br/>
-    Oklahoma City, OK 73112<br/>
-  </div>
-</footer>
-<script type="text/javascript" async="" src="https://www.google-analytics.com/ga.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-22882472-4"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42336802-1', 'bitscheme.com');
-  ga('send', 'pageview');
-
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-22882472-4');
 </script>
-</html>
 
+  <meta charset="utf-8">
+  <title>Bitscheme LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <!-- Include Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <a class="btn btn-info btn-lg centered-link" href="mailto:info@bitscheme.com">
+      <i class="bi bi-envelope"></i>
+      &nbsp;Contact Us
+    </a>
+  </div>
+  <footer class="bg-light py-3">
+    <div class="container">
+      <span class="text-muted">
+        Bitscheme LLC<br>
+        3030 Northwest Expressway<br>
+        STE 200B<br>
+        Oklahoma City, OK 73112
+      </span>
+    </div>
+  </footer>
+</body>
+<!-- Include Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
